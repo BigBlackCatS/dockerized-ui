@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th width="110px">Date</th>
+        <th width="90x">TemperatureC</th>
+        <th width="90px">TemperatureF</th>
+        <th width="90px">Summary</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let weatherForecast of weatherForecasts">
+        <td>{{weatherForecast?.date}}</td>
+        <td>{{weatherForecast?.temperatureC}}</td>
+        <td>{{weatherForecast?.temperatureF}}</td>
+        <td>{{weatherForecast?.summary}}</td>
+    </tbody>
+  </table>
